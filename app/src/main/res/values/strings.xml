@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SportTeam</string>
+    <string name="player_list">Player List</string>
+    <string name="player_details">Player Details</string>
+    <string name="team_achievements">Team Achievements</string>
+    <string name="favorite_players">Favorite Players</string>
+</resources>

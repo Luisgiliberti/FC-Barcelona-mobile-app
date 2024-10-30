@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SportTeam"
+        tools:targetApi="31">
+
+        <!-- Main activity, set as launcher -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SportTeam">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Player List Activity -->
+        <activity
+            android:name="com.example.sportteam.PlayerListActivity"
+            android:exported="true"
+            android:label="@string/player_list"
+            android:theme="@style/Theme.SportTeam" />
+
+        <!-- Player Detail Activity -->
+        <activity
+            android:name="com.example.sportteam.PlayerDetailActivity"
+            android:exported="true"
+            android:label="@string/player_details"
+            android:theme="@style/Theme.SportTeam" />
+
+        <!-- Team Achievements Activity -->
+        <activity
+            android:name="com.example.sportteam.TeamAchievementsActivity"
+            android:exported="true"
+            android:label="@string/team_achievements"
+            android:theme="@style/Theme.SportTeam" />
+
+        <!-- Favorites Activity -->
+        <activity
+            android:name="com.example.sportteam.FavoritesActivity"
+            android:exported="true"
+            android:label="@string/favorite_players"
+            android:theme="@style/Theme.SportTeam" />
+
+    </application>
+</manifest>
